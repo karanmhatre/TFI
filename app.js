@@ -29,16 +29,16 @@ if ('development' == app.get('env')) {
 }
 
 //CONNECT TO MONGODB USING MONGOOSE
-mongoose.connect('mongodb://localhost/test');
+// mongoose.connect('mongodb://localhost/test');
 
 //DEFINE PASSAGE SCHEMA
-var passageSchema = mongoose.Schema({
-    id: Number,
-    title: String,
-    body: String
-});
+// var passageSchema = mongoose.Schema({
+//     id: Number,
+//     title: String,
+//     body: String
+// });
 
-var Passage = mongoose.model('Passage', passageSchema);
+// var Passage = mongoose.model('Passage', passageSchema);
 
 //INDEX
 app.get('/', function(req, res) {
